@@ -1,5 +1,3 @@
-Here’s a detailed description for the **MIRA** app designed to track the Coimbatore water supply network, suitable for a GitHub README file:
-
 ---
 
 # MIRA – Coimbatore Water Supply Network Monitoring Application
