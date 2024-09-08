@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-
 public class myorders extends AppCompatActivity {
     Button checkout,back;
     ListView cartdetails;
@@ -24,9 +23,7 @@ public class myorders extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myorders);
         cartdetails = findViewById(R.id.cartdetails);
-        checkout = findViewById(R.id.checkout);
         back= findViewById(R.id.backtomain);
-        cost= findViewById(R.id.totalcost);
 
         SharedPreferences sharedPreferences = getSharedPreferences("sharedprefs", Context.MODE_PRIVATE);
         String username = sharedPreferences.getString("username","").toString();

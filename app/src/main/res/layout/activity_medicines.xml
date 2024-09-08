@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/labtest"
+    android:background="@drawable/newbg"
     tools:context=".medicines">
 
     <LinearLayout
@@ -20,21 +20,249 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/med_icon" />
+    </LinearLayout>
+
+    <!-- Your existing code -->
+
+    <!-- Add rectangular blocks with text and image -->
+
+
+    <LinearLayout
+        android:id="@+id/block1"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="552dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintVertical_bias="0.684">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="-3dp"
+            android:background="@drawable/melapalayam">
+
+            <TextView
+                android:layout_width="157dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:text="METTUPALAYAM"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/art_teXt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MEDICINES"
-            android:textColor="@color/gwhite"
-            android:textSize="35sp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-100dp"
+            android:text="OBSERVATION WELLS 37"
+            android:textColor="@color/black"
+            android:textSize="12dp"
             android:textStyle="bold"
-            app:fontFamily="@font/architects_daughter" />
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="Mettupalayam Municipality is a local governing body in Tamil Nadu, India, providing civic services, infrastructure, and governance to residents."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/block2"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:src="@drawable/avinasi"
+            android:layout_marginLeft="-4dp"/>
+
+        <TextView
+            android:layout_width="157dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-37dp"
+            android:text="AVINASI"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-100dp"
+            android:text="OBSERVATION WELLS 8"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="Avinasi municipality, located in Tamil Nadu, India, serves as a local government, ensuring civic services, infrastructure, and community well-being."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/block3"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:src="@drawable/palladam"
+            android:layout_marginLeft="-4dp"/>
+        <TextView
+            android:layout_width="157dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-37dp"
+            android:text="PALLADAM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-100dp"
+            android:text="OBSERVATION WELLS 20"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="Palladam Municipality is a local governing body in Tamil Nadu, India, managing civic affairs, infrastructure, and public services for residents."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/block4"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="-4dp"
+            android:src="@drawable/tiruppur" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-37dp"
+            android:text="TIRUPPUR"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-100dp"
+            android:text="OBSERVATION WELLS 7"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="Tiruppur, a bustling municipality in Tamil Nadu, India, thrives as a textile and garment hub, contributing significantly to the region's economy."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/tomyorders_med"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/input_bg"
+        android:text="MY ORDERS"
+        app:backgroundTint="#272727" />
+
+
+    <Button
+        android:id="@+id/art_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:text="BACK"
+        android:textColor="@color/white"
+        app:backgroundTint="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
         android:id="@+id/art_list"
@@ -43,44 +271,35 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/art" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <TextView
+        android:id="@+id/art_teXt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:text="CORPORATIONS"
+        android:textColor="@color/gwhite"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/architects_daughter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/labtest_icon"
+        android:tint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/art_list">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/tomyorders_med"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:background="@drawable/input_bg"
-            android:text="MY ORDERS"
-            app:backgroundTint="#272727" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="                "
+    <!-- Add more blocks for additional lakes if needed -->
 
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-        <Button
-            android:id="@+id/art_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:background="@drawable/input_bg"
-            android:text="BACK"
-            app:backgroundTint="#272727" />
-
-    </LinearLayout>
-
+    <!-- Your existing code -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

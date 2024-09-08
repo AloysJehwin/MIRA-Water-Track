@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/labtest"
+    android:background="@drawable/newbg"
     tools:context=".labtest">
+
+    <!-- Your existing code -->
 
     <LinearLayout
         android:id="@+id/art"
@@ -20,21 +23,282 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/labtest_icon" />
+    </LinearLayout>
+
+    <!-- Your existing code -->
+
+    <!-- Add rectangular blocks with text and image -->
+
+
+    <LinearLayout
+        android:id="@+id/block1"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="552dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintVertical_bias="0.684">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="-3dp"
+            android:background="@drawable/ukkadam">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="75dp"
+                android:text="UKKADAM"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/art_teXt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LAB TEST"
-            android:textColor="@color/gwhite"
-            android:textSize="35sp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-100dp"
+            android:text="Area of 1.295 km^2"
+            android:textColor="@color/black"
+            android:textSize="15dp"
             android:textStyle="bold"
-            app:fontFamily="@font/architects_daughter" />
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="225dp"
+            android:gravity="center"
+            android:text="Water Volume 1,982,179ha.m"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="Lake water is utilized for civic needs, including desilting, restoration efforts, and a beautification project in Ukkadam, Coimbatore."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
     </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/block2"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:src="@drawable/kumaraswamy1"
+            android:layout_marginLeft="-4dp"/>
+
+        <TextView
+            android:layout_width="157dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-37dp"
+            android:text="KUMARASWAMY"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-95dp"
+            android:text="Area of 0.290 km^2"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="240dp"
+            android:gravity="center"
+            android:text="Water Volume 179ha.m"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="Microplastics (5mm) in Kumaraswamy Lake, Coimbatore, originate from plastic degradation. Seasonal variations reveal high concentrations, posing potential harm to lake ecosystems."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/block3"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:src="@drawable/sulur"
+            android:layout_marginLeft="-4dp"/>
+        <TextView
+            android:layout_width="157dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-37dp"
+            android:text="SULUR"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-90dp"
+            android:text="Area of 0.6912 km^2"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="235dp"
+            android:gravity="center"
+            android:text="Water Volume 1,982,179ha.m"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="210dp"
+            android:gravity="center"
+            android:text="Sulur Lake in Tamil Nadu, India, is a vital waterbody with diverse ecosystems, facing restoration efforts and environmental challenges."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/block4"
+        android:layout_width="385dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="-4dp"
+            android:src="@drawable/krishnampathi" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-37dp"
+            android:text="KRISHAMAPATHI"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-90dp"
+            android:text="Area of 0.2468 km^2"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginLeft="235dp"
+            android:gravity="center"
+            android:text="Water Volume 1,982,179ha.m"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="Krishnampathy Lake, 61 acres in Coimbatore, connects various lakes and joins the Noyyal River in the city's southern region."
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/tomyorders_med"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/input_bg"
+        android:text="MY ORDERS"
+        app:backgroundTint="#272727" />
+
+
+    <Button
+        android:id="@+id/art_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_rect"
+        android:backgroundTint="@color/white"
+        android:text="BACK"
+        android:textColor="@color/white"
+        app:backgroundTint="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
         android:id="@+id/art_list"
@@ -43,44 +307,35 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/art" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <TextView
+        android:id="@+id/art_teXt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="116dp"
+        android:text="LAKES"
+        android:textColor="@color/gwhite"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/architects_daughter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/labtest_icon"
+        android:tint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/art_list">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/tomyorders_med"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:background="@drawable/input_bg"
-            android:text="MY ORDERS"
-            app:backgroundTint="#272727" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="                "
+    <!-- Add more blocks for additional lakes if needed -->
 
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-        <Button
-            android:id="@+id/art_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:background="@drawable/input_bg"
-            android:text="BACK"
-            app:backgroundTint="#272727" />
-
-    </LinearLayout>
-
+    <!-- Your existing code -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
